@@ -1,5 +1,5 @@
 # BandManager
-Die Band-Manager-App ist eine moderne Angular-Webanwendung für Musiker und Bands, die die Organisation und Verwaltung von Songs und Setlists vereinfacht. Sie entstand während meiner 2jährigen Ausbildung. Das Backend wurde von Luca Jürgens entwickelt und in Docker-Containern gehostet.
+Die Band-Manager-App ist eine moderne Angular-Webanwendung für Musiker und Bands, die die Organisation und Verwaltung von Songs und Setlists vereinfacht. Sie entstand während meiner zweijährigen Fachinformatikerin-Ausbildung. Das Backend wurde von Luca J. entwickelt und in Docker-Containern gehostet.
 
 ## Inhaltsverzeichnis
 - [Projektidee](#projektidee)
@@ -7,9 +7,10 @@ Die Band-Manager-App ist eine moderne Angular-Webanwendung für Musiker und Band
 - [Geplante Features](#geplante-features)
 - [Technologien](#technologien)
 - [Architektur](#architektur)
-- [User Stories](#user-stories)
+- [Projektmanagement](#projektmanagement)
 - [Status](#status)
 - [Team](#team)
+- [Screenshots](#screenshots)
 - [Lizenz](#lizenz)
 
 ## Projektidee
@@ -29,18 +30,11 @@ Ziel des Projekts ist die Entwicklung einer Anwendung zur effizienten Organisati
 ### Musikbibliothek
 - Speicherung von Song-Informationen (Titel, Texte, Akkorde, Noten, Audio-Demos)
 - Anzeige aller Songs in übersichtlicher Liste
-- Suche und Filterung von Songs ( nach Titel, Künstler, Genre)
-- CRUD-Funktionalität (Create, Read, Update, Delete) für Songs
-- Responsive Design für Desktop, Tablet und Smartphone
-  
-### Anmerkungen und Notizen
-- Hinzufügen, Bearbeiten und Löschen von Notizen zu Songs
-- Anzeige von Anmerkungen in der Song-Detailansicht
-- Responsives und benutzerfreundliches Interface
+- Suche und Filterung von Songs (nach Titel, Künstler, Genre)
+- CRUD-Funktionalität (Create, Read, Update, Delete) für Songs  
+- Benutzerfreundliches Interface
 
-*(Die Features „Setlist-Erstellung“, „Gruppenverwaltung“ und Responsive Design wurden für das initiale Release _(Projektabgabe)_ aus Zeitgründen gestrichen, sind jedoch perspektivisch geplant.)*
-
-## geplante Features
+## Geplante Features
 Folgende Funktionen waren für die BandManager-App vorgesehen, wurden jedoch im Proof-of-Concept noch nicht umgesetzt:
 
 - **Responsive Design**
@@ -80,7 +74,7 @@ Folgende Funktionen waren für die BandManager-App vorgesehen, wurden jedoch im 
 - TypeScript
 - SCSS
 - Docker (für Backend und Datenbank)
-- JWT-basierte Authentifizierung war geplant, die Umsetzung im Frontend jedoch aus Zeitgründen gestrichen.
+- JWT-basierte Authentifizierung war geplant, wurde jedoch im Frontend aus Zeitgründen nicht umgesetzt.
 - Datenbank: relational (MySQL)
 
 ## Architektur
@@ -88,7 +82,7 @@ Folgende Funktionen waren für die BandManager-App vorgesehen, wurden jedoch im 
 ### Frontend
 - Entwicklung mit Angular
 - Moderne UI-Komponenten
-Das Frontend enthält CRUD-Funktionen für Songs. Zunächst wurde ein Mock-Backend genutzt, bevor die App an die finale REST-API des Backends angebunden wurde.
+- Das Frontend enthält CRUD-Funktionen für Songs. Zunächst wurde ein Mock-Backend genutzt, bevor die App an die finale REST-API des Backends angebunden wurde.
 
 ### Backend
 - Entwicklung von RESTful APIs für Songs (CRUD)
@@ -130,8 +124,9 @@ Das Projekt wurde als eduScrum-Projekt konzipiert. Es wurden User Stories mit Ak
 
 ## Status
 
-> **Proof-of-Concept**  
-> Einige Funktionen wurden entwickelt und getestet. Teile des Codes basieren auf Projektdokumentation. Responsive Design, Touch-Unterstützung und Nutzermanagement sind aktuell nicht implementiert.
+**Proof-of-Concept**  
+Einige Funktionen wurden entwickelt und getestet. Der Code wurde aus der Projektdokumentation rekonstruiert.
+Responsive Design, Touch-Unterstützung und Nutzermanagement sind aktuell nicht implementiert.
 
 ## Team
 
@@ -139,20 +134,166 @@ Das Projekt wurde als eduScrum-Projekt konzipiert. Es wurden User Stories mit Ak
 - **Luca J.** – Backend-Entwicklung (API, Datenbank, Docker)
 - **S. G.** – Product Owner / Mentor
 
-  ## Screenshots
+## Screenshots
   siehe Ordner '/screenshots'
-
-  ## Status
-  Proof-of-Concept
-  Code, zT rekonstruiert aus Projektdokumentation
-
-
-
-
-  ## Projektmanagement
-  Das Projekt wurde als edu-Scrum-Projekt konzipiert. Es wurden User Stories mit Akzeptanzkriterien für jeweils Front- und Backend.
-  User Story 1: „Als Bandmitglied möchte ich alle Songs der Band in einer zentralen Datenbank speichern können, um schnellen Zugriff auf Texte, Akkorde und Noten zu haben.“
-  User Story 2: „Als Bandmitglied möchte ich Anmerkungen und Notizen zu Songs hinterlassen können, um z.B. wichtige Hinweise für die Probe oder den Auftritt zu speichern.“
-
-  ## Lizenz
+  
+## Lizenz
   Dieses Projekt steht unter der Creative Commons Attribution-NonCommercial 4.0 Lizenz. Keine kommerzielle Nutzung erlaubt.
+
+---
+
+# BandManager
+
+**BandManager** is a modern Angular web application designed for musicians and bands to simplify the organization and management of songs and setlists. It was developed during my two-year apprenticeship as an IT specialist. The backend was implemented by Luca J. and is hosted in Docker containers.
+
+## Table of Contents
+- [Project Idea](#project-idea)
+- [Features](#features)
+- [Planned Features](#planned-features)
+- [Technologies](#technologies)
+- [Architecture](#architecture)
+- [Project Management](#project-management)
+- [Status](#status)
+- [Team](#team)
+- [Screenshots](#screenshots)
+- [License](#license)
+
+## Project Idea
+
+The goal of this project is to develop an application for the efficient organization and management of a band's own songs and setlists. The focus lies on the **Music Library** as the central module, serving as a database for all of a band’s own songs. In addition, the application aims to ensure data protection, data security, usability, and a robust technical foundation.
+
+**Target Audience:**
+- Musicians and bands
+
+**Strategic Goals:**
+- High usability and software ergonomics
+- Good test coverage
+- Sustainable and scalable architecture
+- Data protection and data security (e.g. GDPR compliance)
+
+## Features (Implemented)
+
+### Music Library
+- Storage of song information (title, lyrics, chords, sheet music, audio demos)
+- Display of all songs in a clear and organized list
+- Search and filter functionality (by title, artist, genre)
+- CRUD functionality (Create, Read, Update, Delete) for songs
+- User-friendly interface
+
+> The frontend includes CRUD functionality for songs. Initially, a mock backend was used to enable development independently of the backend. Later, the app was connected to the final REST API of the backend.
+
+## Planned Features
+
+The following features were planned for BandManager but have not yet been implemented in the proof of concept:
+
+- **Responsive Design**
+  - Adapting the layout to various screen sizes (desktop, tablet, smartphone)
+  - Mobile-first approach
+  - Support for touch gestures
+
+- **Form Validation**
+  - Comprehensive validation of all form inputs in the frontend
+  - Error messages for missing required fields
+
+- **Setlist Management**
+  - Create and manage setlists for performances
+  - Drag-and-drop functionality to sort songs
+  - Reuse saved setlists as templates
+
+- **Group Management**
+  - Create, manage, and delete user groups
+  - Invite users via invitation links
+
+- **User Management Frontend**
+  - Frontend login with JWT integration
+  - Manage user accounts
+  - Password reset and email verification
+
+- **Progressive Web App (PWA)**
+  - Offline functionality
+  - App-like experience
+
+- **Additional Modules (long-term)**
+  - Calendar and event planning
+  - Chat module for band members
+  - Volume monitoring via sensors
+
+## Technologies
+
+- [Angular](https://angular.io/) (Standalone Components)
+- TypeScript
+- SCSS
+- Docker (for backend and database)
+- A JWT-based authentication was planned but not implemented in the frontend due to time constraints.
+- Database: relational (MySQL)
+
+## Architecture
+
+### Frontend
+
+- Developed with Angular
+- Modern UI components
+- The frontend includes CRUD operations for songs. Initially, a mock backend was used before connecting the app to the final REST API of the backend.
+
+### Backend
+
+- Development of RESTful APIs for songs (CRUD)
+- Hosted in Docker containers
+- Data persistence using containerized databases
+- Planned JWT-based authentication (not implemented in the frontend)
+- Encryption of sensitive data
+- Role and permission management (planned)
+
+### Security & Data Protection
+
+- Planned access restrictions for all CRUD operations
+- Encryption of data at rest and in transit
+- GDPR compliance
+- Backup strategies for stored data
+
+## Project Management
+
+The project was organized as an **eduScrum project**. User stories with acceptance criteria were created for both the frontend and backend.
+
+## User Stories
+
+### User Story 1: Song Database
+
+> "As a band member, I want to store all the band's songs in a central database so that I have quick access to lyrics, chords, and sheet music."
+
+- Forms for entering and editing song information
+- CRUD functionality for songs
+- Search and filter options
+
+*(Form validation and responsive design were planned but not fully implemented.)*
+
+### User Story 2: Song Annotations
+
+> "As a band member, I want to add notes and comments to songs to save important information for rehearsals or performances."
+
+- Input fields for adding notes to songs
+- Display of annotations in the song detail view
+- CRUD functionality for annotations
+
+*(This feature was not implemented due to time constraints.)*
+
+## Status
+
+**Proof of Concept**  
+Several functions were developed and tested. Part of the code was reconstructed from project documentation. Responsive design, touch support, and user management are currently not implemented.
+
+## Team
+
+- **Andrea Küllmer** – Frontend Development (Angular, UI/UX)
+- **Luca J.** – Backend Development (API, database, Docker)
+- **S. G.** – Product Owner / Mentor
+
+## Screenshots
+
+See the folder [`/screenshots`](./screenshots) for example views of the BandManager user interface.
+
+## License
+
+This project is licensed under the **Creative Commons Attribution-NonCommercial 4.0 License**.  
+Commercial use is not permitted.
+
