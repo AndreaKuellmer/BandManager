@@ -126,7 +126,9 @@ Das Projekt wurde als eduScrum-Projekt konzipiert. Es wurden User Stories mit Ak
 
 **Proof-of-Concept**  
 Einige Funktionen wurden entwickelt und getestet. Der Code wurde aus der Projektdokumentation rekonstruiert.
-Responsive Design, Touch-Unterstützung und Nutzermanagement sind aktuell nicht implementiert.
+Ein einfaches Responsive Design für Desktop-Bildschirme ist vorhanden, jedoch bisher nicht für mobile Geräte umgesetzt.
+Mobile Unterstützung, Touch-Gesten und Nutzermanagement sind aktuell nicht implementiert.
+
 
 ## Team
 
@@ -280,7 +282,8 @@ The project was organized as an **eduScrum project**. User stories with acceptan
 ## Status
 
 **Proof of Concept**  
-Several functions were developed and tested. Part of the code was reconstructed from project documentation. Responsive design, touch support, and user management are currently not implemented.
+Several features have been developed and tested. Part of the code was reconstructed from project documentation.  
+A basic responsive design is implemented for desktop screens. Mobile support, touch gestures, and user management are currently not implemented.
 
 ## Team
 
